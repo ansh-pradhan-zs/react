@@ -4,8 +4,9 @@ export const useComponentSize = (ref) => {
   const [size, setSize] = useState({ width: 0, height: 0 });
 
   useEffect(() => {
+    let refComp = ref.current;
     const updateSize = () => {
-      if (ref.current) {
+      if (refComp) {
         const { width, height } = ref.current.getBoundingClientRect();
         setSize({ width, height });
       }
@@ -15,16 +16,16 @@ export const useComponentSize = (ref) => {
 
     const resizeObserver = new ResizeObserver(updateSize);
 
-    if (ref.current) {
-      resizeObserver.observe(ref.current);
+    if (refComp) {
+      resizeObserver.observe(refComp);
     }
 
     return () => {
-      if (ref.current) {
-        resizeObserver.unobserve(ref.current);
+      if (refComp) {
+        resizeObserver.unobserve(refComp);
       }
     };
-  }, [ref]);
+  }, []);
 
   return size;
 };
