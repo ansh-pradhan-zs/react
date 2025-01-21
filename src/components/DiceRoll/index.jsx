@@ -5,7 +5,7 @@ const DiceRoll = () => {
   const [diceRollCount, setDiceRollCount] = useState(0);
   const [diceInput, setDiceInput] = useState(0);
   const [error, setError] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
+  const [diceArr, setDiceArr] = useState([]);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -16,12 +16,24 @@ const DiceRoll = () => {
       setDiceRollCount(0);
       return;
     }
-    setIsLoading(true);
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
+
     setDiceRollCount(diceInput);
+    setDiceArr(generateDices(diceInput));
   }
+
+  function generateDices(diceInput) {
+    let arr = [];
+    for (let i = 1; i <= diceInput; i++) {
+      let obj = {};
+      if (i != diceInput) {
+        obj["a"] = i;
+        obj["b"] = diceInput - i;
+        arr.push(obj);
+      }
+    }
+    return arr;
+  }
+
   return (
     <div className="container">
       <form onSubmit={handleSubmit} className="input-grp">
@@ -38,7 +50,7 @@ const DiceRoll = () => {
         {error && <span className="error">{error}</span>}
         <button type="submit">Roll</button>
       </form>
-      <ChildRoll diceRollCount={diceRollCount} isLoading={isLoading} />
+      <ChildRoll diceArr={diceArr} />
     </div>
   );
 };
