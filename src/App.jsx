@@ -1,10 +1,11 @@
 import "./App.css";
-import Day9 from "./components/Day9";
+import DiceRoll from "./components/DiceRoll";
 
 function App() {
   return (
     <main className="m-4">
-      <Day9 />
+      {/* <Day9 /> */}
+      <DiceRoll />
     </main>
   );
 }

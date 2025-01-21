@@ -1,0 +1,33 @@
+.input-grp {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 10px;
+}
+
+.input-grp > button,
+input {
+  border: 1px solid purple;
+  width: 300px;
+  height: 40px;
+  border-radius: 7px;
+  color: purple;
+  padding-left: 5px;
+}
+
+.input-grp button {
+  background-color: rgb(229, 135, 229);
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
