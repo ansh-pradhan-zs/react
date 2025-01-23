@@ -7,7 +7,7 @@ const Modal = ({ setOpenModal }) => {
     }
   }
   return (
-    <div className="modal" id="modal-container" onClick={closeModal}>
+    <main className="modal" id="modal-container" onClick={closeModal}>
       <div className="modal-div" id="modal-div">
         <div className="modal-title">
           <span>Hello Its Me</span>
@@ -21,7 +21,7 @@ const Modal = ({ setOpenModal }) => {
           necessitatibus recusandae molestiae consequuntur et? Quos, vero hic.
         </span>
       </div>
-    </div>
+    </main>
   );
 };
 
