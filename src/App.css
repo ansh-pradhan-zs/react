@@ -129,7 +129,7 @@ span {
   padding: 10px;
   position: absolute;
   right: 0;
-  animation: 1s slide-in;
+  animation: 0.5s slide-in;
 }
 
 @keyframes slide-in {
