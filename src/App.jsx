@@ -2,19 +2,28 @@ import { useState } from "react";
 import "./App.css";
 import { useRef } from "react";
 import { useEffect } from "react";
+import Sidebar from "./components/Sidebar";
 
 function App() {
+  const [showSidebar, setShowSidebar] = useState(false);
+
   return (
-    <main>
+    <main className="main-container">
       {tooltips.map((item, i) => (
         <div className="card" key={i}>
           {i % 2 === 0 ? (
-            <Button text={item.text} alignment={item.alignment} />
+            <Button
+              text={item.text}
+              alignment={item.alignment}
+              isShowSidebarBtn={i === 4 ? true : false}
+              setShowSidebar={setShowSidebar}
+            />
           ) : (
             <Hover text={item.text} alignment={item.alignment} />
           )}
         </div>
       ))}
+      {showSidebar && <Sidebar setShowSidebar={setShowSidebar} />}
     </main>
   );
 }
@@ -83,10 +92,18 @@ const Tooltip = ({ alignment, text, children, isButton }) => {
   );
 };
 
-const Button = ({ alignment, text }) => {
+const Button = ({ alignment, text, isShowSidebarBtn, setShowSidebar }) => {
   return (
     <Tooltip text={text} alignment={alignment} isButton={true}>
-      <button>Click me</button>
+      <button
+        onClick={() => {
+          if (isShowSidebarBtn) {
+            setShowSidebar(true);
+          } else return;
+        }}
+      >
+        Click me
+      </button>
     </Tooltip>
   );
 };
@@ -117,7 +134,7 @@ const tooltips = [
     alignment: "right",
   },
   {
-    text: "Tool Tip 5",
+    text: "Side bar",
     alignment: "bottom",
   },
   {
