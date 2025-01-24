@@ -1,12 +1,139 @@
+import { useState } from "react";
 import "./App.css";
-import Day9 from "./components/Day9";
+import { useRef } from "react";
+import { useEffect } from "react";
 
 function App() {
   return (
-    <main className="m-4">
-      <Day9 />
+    <main>
+      {tooltips.map((item, i) => (
+        <div className="card" key={i}>
+          {i % 2 === 0 ? (
+            <Button text={item.text} alignment={item.alignment} />
+          ) : (
+            <Hover text={item.text} alignment={item.alignment} />
+          )}
+        </div>
+      ))}
     </main>
   );
 }
 
 export default App;
+
+const Tooltip = ({ alignment, text, children, isButton }) => {
+  const [showTT, setShowTT] = useState(false);
+  const btnRef = useRef(null);
+
+  const positionHover =
+    alignment == "top"
+      ? "pos-top"
+      : alignment == "right"
+      ? "pos-right"
+      : alignment == "bottom"
+      ? "pos-bottom"
+      : alignment == "left"
+      ? "pos-left"
+      : null;
+
+  const positionClick =
+    alignment == "top"
+      ? "pos-top-btn"
+      : alignment == "right"
+      ? "pos-right-btn"
+      : alignment == "bottom"
+      ? "pos-bottom-btn"
+      : alignment == "left"
+      ? "pos-left-btn"
+      : null;
+
+  useEffect(() => {
+    function handleOutsideClick(e) {
+      if (btnRef.current && !btnRef.current.contains(e.target)) {
+        setShowTT(false);
+      }
+    }
+
+    document.addEventListener("click", handleOutsideClick);
+
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, [btnRef]);
+
+  return (
+    <div className="tt-container">
+      {isButton ? (
+        <span className="btn" ref={btnRef} onClick={() => setShowTT(!showTT)}>
+          {children}
+        </span>
+      ) : (
+        <span
+          onMouseEnter={() => setShowTT(true)}
+          onMouseLeave={() => setShowTT(false)}
+        >
+          {children}
+        </span>
+      )}
+
+      {showTT && (
+        <span className={isButton ? positionClick : positionHover}>{text}</span>
+      )}
+    </div>
+  );
+};
+
+const Button = ({ alignment, text }) => {
+  return (
+    <Tooltip text={text} alignment={alignment} isButton={true}>
+      <button>Click me</button>
+    </Tooltip>
+  );
+};
+
+const Hover = ({ alignment, text }) => {
+  return (
+    <Tooltip text={text} alignment={alignment} isButton={false}>
+      <span>Hover over me</span>
+    </Tooltip>
+  );
+};
+
+const tooltips = [
+  {
+    text: "Tool Tip 1",
+    alignment: "top",
+  },
+  {
+    text: "Tool Tip 2",
+    alignment: "top",
+  },
+  {
+    text: "Tool Tip 3",
+    alignment: "right",
+  },
+  {
+    text: "Tool Tip 4",
+    alignment: "right",
+  },
+  {
+    text: "Tool Tip 5",
+    alignment: "bottom",
+  },
+  {
+    text: "Tool Tip 6",
+    alignment: "bottom",
+  },
+  {
+    text: "Tool Tip 7",
+    alignment: "left",
+  },
+  {
+    text: "Tool Tip 8",
+    alignment: "left",
+  },
+  {
+    text: "Tool Tip 9",
+    alignment: "top",
+  },
+];

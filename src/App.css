@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-blue: #4635b1;
+  --color-purple: #b771e5;
+  --color-green: #aeea94;
+  --color-yellow: #fffbca;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background: var(--color-purple);
+  height: 100vh;
+  width: 100vw;
+  gap: 5px;
+}
+
+.card {
+  background-color: var(--color-yellow);
+  display: grid;
+  place-items: center;
+}
+
+button {
+  background-color: var(--color-green);
+  color: var(--color-blue);
+}
+
+span {
+  background-color: var(--color-purple);
+  color: var(--color-yellow);
+  padding: 4px 8px;
+  border-radius: 12px;
+  cursor: default;
+}
+
+/* MY CSS */
+
+.tt-container {
+  position: relative;
+}
+
+.pos-top {
+  position: absolute;
+  background-color: black;
+  bottom: 30px;
+  right: 25px;
+}
+
+.pos-right {
+  position: absolute;
+  background-color: black;
+  top: -5px;
+  right: -90px;
+}
+
+.pos-bottom {
+  position: absolute;
+  background-color: black;
+  bottom: -40px;
+  right: 30px;
+}
+
+.pos-left {
+  position: absolute;
+  background-color: black;
+  left: -90px;
+  top: -5px;
+}
+
+.btn {
+  background-color: transparent;
+}
+
+/* button */
+
+.pos-top-btn {
+  position: absolute;
+  background-color: black;
+  bottom: 45px;
+  right: 18px;
+}
+
+.pos-right-btn {
+  position: absolute;
+  background-color: black;
+  top: 2px;
+  right: -85px;
+}
+
+.pos-bottom-btn {
+  position: absolute;
+  background-color: black;
+  bottom: -40px;
+  right: 18px;
+}
+
+.pos-left-btn {
+  position: absolute;
+  background-color: black;
+  left: -85px;
+  top: 5px;
+}
