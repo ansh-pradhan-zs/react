@@ -49,8 +49,10 @@ span {
 .pos-top {
   position: absolute;
   background-color: black;
-  bottom: 30px;
-  right: 25px;
+  background-color: black;
+  bottom: 120%; /* Align tooltip above the element */
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .pos-right {
@@ -63,8 +65,9 @@ span {
 .pos-bottom {
   position: absolute;
   background-color: black;
-  bottom: -40px;
-  right: 30px;
+  top: 120%;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .pos-left {
@@ -134,7 +137,7 @@ span {
 
 @keyframes slide-in {
   0% {
-    transform: translate(300px);
+    transform: translate(100%);
   }
 
   100% {
