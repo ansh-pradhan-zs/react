@@ -1,10 +1,11 @@
 import "./App.css";
-import DiceRoll from "./components/DiceRoll";
+// import DiceRoll from "./components/DiceRoll";
 
-import ParentDetailCard from "./components/ParentDetailCard/ParentDetailCard";
-import Accordion from "./components/Accordion/Accordion";
-import Day9 from "./components/Day9/Day9";
-import Day13 from "./components/Day13/Day13";
+// import ParentDetailCard from "./components/ParentDetailCard/ParentDetailCard";
+// import Accordion from "./components/Accordion/Accordion";
+// import Day9 from "./components/Day9/Day9";
+// import Day13 from "./components/Day13/Day13";
+import Day14 from "./components/Day14/Day14";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
           }
         />
         <Accordion /> */}
-        <Day13 />
+        {/* <Day13 /> */}
+        <Day14 />
       </main>
     </>
   );
