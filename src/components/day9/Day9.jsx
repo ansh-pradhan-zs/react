@@ -1,7 +1,7 @@
 import { useRef } from "react";
-import { useIsMounted } from "../hooks/useIsMounted";
-import { useWindowSize } from "../hooks/useWindowSize";
-import { useComponentSize } from "../hooks/useComponentSize";
+import { useIsMounted } from "../../hooks/useIsMounted";
+import { useWindowSize } from "../../hooks/useWindowSize";
+import { useComponentSize } from "../../hooks/useComponentSize";
 
 const Day9 = () => {
   const { width, height } = useWindowSize();

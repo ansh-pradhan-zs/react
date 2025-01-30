@@ -1,30 +1,19 @@
-import { Link, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Book from "./pages/Book";
-import Books from "./pages/Books";
-import FourOFour from "./pages/FourOFour";
+
+import ParentDetailCard from "./components/ParentDetailCard/ParentDetailCard";
 
 function App() {
   return (
     <>
-      <nav className="m-3">
-        <ul>
-          <li className="flex flex-row items-center gap-5">
-            <Link to={"/"}>Home</Link>
-            <Link to={"/about"}>About</Link>
-            <Link to={`/books`}>Books</Link>
-          </li>
-        </ul>
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/books" element={<Books />} />
-        <Route path="/book/:id" element={<Book />} />
-        <Route path="*" element={<FourOFour />} />
-      </Routes>
+      <main>
+        <ParentDetailCard
+          title={"SDE-1"}
+          desc={"He is a happy mannnnnnnnnnnnnnnnnnnnnn!"}
+          img={
+            "https://plus.unsplash.com/premium_photo-1689539137236-b68e436248de?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          }
+        />
+      </main>
     </>
   );
 }
