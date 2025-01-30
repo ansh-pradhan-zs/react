@@ -1,6 +1,5 @@
 import "./App.css";
-import Accordion from "./components/Accordion";
-import Day9 from "./components/Day9";
+import Accordion from "./components/Accordion/Accordion";
 
 function App() {
   return (

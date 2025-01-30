@@ -1,4 +1,5 @@
-import { MenuItem } from "./MenuItem";
+import { MenuItem } from "../../components/MenuItem";
+import "./accordion.css";
 
 const menuItems = [
   {
