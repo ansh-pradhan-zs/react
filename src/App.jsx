@@ -3,11 +3,13 @@ import DiceRoll from "./components/DiceRoll";
 
 import ParentDetailCard from "./components/ParentDetailCard/ParentDetailCard";
 import Accordion from "./components/Accordion/Accordion";
+import Day9 from "./components/Day9/Day9";
 
 function App() {
   return (
     <>
       <main>
+        <Day9 />
         <DiceRoll />
         <ParentDetailCard
           title={"SDE-1"}
