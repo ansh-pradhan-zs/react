@@ -5,8 +5,9 @@ import "./App.css";
 // import Accordion from "./components/Accordion/Accordion";
 // import Day9 from "./components/Day9/Day9";
 // import Day13 from "./components/Day13/Day13";
-import Day14 from "./components/Day14/Day14";
-import Day14Throttling from "./components/Day14Throttling/Day14Throttling";
+// import Day14 from "./components/Day14/Day14";
+// import Day14Throttling from "./components/Day14Throttling/Day14Throttling";
+import Day8 from "./components/Day8/Day8";
 
 function App() {
   // function throttle(func, delay) { // ? using timeoutId
@@ -24,6 +25,7 @@ function App() {
   return (
     <>
       <main>
+        <Day8 />
         {/* <Day9 />
         <DiceRoll />
         <ParentDetailCard
@@ -35,8 +37,8 @@ function App() {
         />
         <Accordion /> */}
         {/* <Day13 /> */}
-        <Day14 />
-        <Day14Throttling />
+        {/* <Day14 />
+        <Day14Throttling /> */}
       </main>
     </>
   );
