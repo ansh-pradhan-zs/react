@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ChildRoll from "../ChildRoll";
-import "./index.css";
+import "./diceRoll.css";
 const DiceRoll = () => {
   const [diceRollCount, setDiceRollCount] = useState(0);
   const [diceInput, setDiceInput] = useState(0);
