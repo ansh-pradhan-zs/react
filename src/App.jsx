@@ -1,12 +1,15 @@
 import "./App.css";
+import DiceRoll from "./components/DiceRoll";
 
 import ParentDetailCard from "./components/ParentDetailCard/ParentDetailCard";
 
 function App() {
   return (
+
     <>
       <main>
-        <ParentDetailCard
+      <DiceRoll />
+      <ParentDetailCard
           title={"SDE-1"}
           desc={"He is a happy mannnnnnnnnnnnnnnnnnnnnn!"}
           img={
