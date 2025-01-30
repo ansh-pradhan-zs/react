@@ -1,4 +1,5 @@
 import { IoIosCloseCircle } from "react-icons/io";
+import "./modal.css";
 
 const Modal = ({ setOpenModal }) => {
   function closeModal(e) {
