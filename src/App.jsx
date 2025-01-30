@@ -4,6 +4,7 @@ import DiceRoll from "./components/DiceRoll";
 import ParentDetailCard from "./components/ParentDetailCard/ParentDetailCard";
 import Accordion from "./components/Accordion/Accordion";
 import Day9 from "./components/Day9/Day9";
+import Day13 from "./components/Day13/Day13";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           }
         />
         <Accordion />
+        <Day13 />
       </main>
     </>
   );
