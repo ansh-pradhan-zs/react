@@ -6,8 +6,21 @@ import "./App.css";
 // import Day9 from "./components/Day9/Day9";
 // import Day13 from "./components/Day13/Day13";
 import Day14 from "./components/Day14/Day14";
+import Day14Throttling from "./components/Day14Throttling/Day14Throttling";
 
 function App() {
+  // function throttle(func, delay) { // ? using timeoutId
+  //   let timeoutId;
+  //   return () => {
+  //     if (!timeoutId) {
+  //       func(); // ? api call
+  //       timeoutId = setTimeout(() => {
+  //         timeoutId = null;
+  //       }, delay);
+  //     }
+  //   };
+  // }
+
   return (
     <>
       <main>
@@ -23,6 +36,7 @@ function App() {
         <Accordion /> */}
         {/* <Day13 /> */}
         <Day14 />
+        <Day14Throttling />
       </main>
     </>
   );
