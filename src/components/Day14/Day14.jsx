@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import Sidebar from "../Sidebar";
+import Sidebar from "./Sidebar";
 import "./day14.css";
 
 const Day14 = () => {

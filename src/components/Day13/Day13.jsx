@@ -11,7 +11,9 @@ const Day13 = () => {
         Open Modal
       </button>
       {openModal && <Modal setOpenModal={setOpenModal} />}
-      <SearchInput />
+      <div className="absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+        <SearchInput />
+      </div>
     </div>
   );
 };

@@ -60,7 +60,7 @@ const Day8 = () => {
     );
   }
   return (
-    <div>
+    <div className="p-10">
       <Form />
       <div className="grid grid-cols-3 gap-5">
         {buttons.map((button, ind) => {

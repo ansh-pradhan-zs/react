@@ -10,7 +10,10 @@ const Day9 = () => {
   const size = useComponentSize(ref);
 
   return (
-    <div ref={ref} className="shadow-xl rounded-md flex flex-col gap-5 p-4">
+    <div
+      ref={ref}
+      className="shadow-xl rounded-md flex flex-col gap-5 p-4 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
+    >
       <span className="text-2xl">Day 9 Assignment</span>
       {/* useWindowSize hook */}
       <div className="grid grid-cols-3 gap-5">

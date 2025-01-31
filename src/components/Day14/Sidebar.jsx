@@ -1,3 +1,5 @@
+import "./day14.css";
+
 const Sidebar = ({ setShowSidebar }) => {
   function handleClick(e) {
     if (e.target.id === "sidebar-container") setShowSidebar(false);

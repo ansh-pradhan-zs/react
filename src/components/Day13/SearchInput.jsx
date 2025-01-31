@@ -28,7 +28,8 @@ const SearchInput = () => {
   }
 
   return (
-    <div>
+    <div className="flex flex-col gap-2">
+      <span>Debounce Input</span>
       <input type="text" className="search-input" onChange={debounce()} />
     </div>
   );
