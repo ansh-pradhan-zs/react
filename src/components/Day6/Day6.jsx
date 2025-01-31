@@ -10,7 +10,7 @@ const Day6 = () => {
   }, []);
   return (
     <main>
-      <div className="empty-div">
+      <div className="empty-div1">
         <span>Heyo! Wassup?</span>
       </div>
       <div ref={ref}>

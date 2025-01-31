@@ -1,4 +1,4 @@
-.card {
+.card2 {
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -8,12 +8,12 @@
   width: fit-content;
 }
 
-.card img {
+.card2 img {
   width: 300px;
   border-radius: 5px;
 }
 
-.details {
+.details2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,7 +23,7 @@
   border: 1px solid rgb(235, 158, 62);
 }
 
-.title {
+.title2 {
   border: 1px solid rgb(235, 158, 62);
   padding: 4px 8px 4px 8px;
   border-radius: 5px;
@@ -31,7 +31,7 @@
   text-align: center;
 }
 
-.desc {
+.desc2 {
   padding: 4px;
   border-radius: 5px;
   display: flex;
@@ -42,7 +42,7 @@
 }
 
 @media screen and (max-width: 750px) {
-  .card {
+  .card2 {
     flex-direction: column;
     align-items: center;
   }

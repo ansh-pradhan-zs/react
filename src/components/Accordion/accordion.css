@@ -12,7 +12,7 @@
   transform: translateY(2px) rotate(-135deg);
 }
 
-.content {
+.content3 {
   background-color: orange;
   padding: 8px;
   animation: 1.3s alternate accordion-open;
@@ -21,14 +21,14 @@
   border-bottom-left-radius: 20px;
 }
 
-.container {
+.container3 {
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.label {
+.label3 {
   display: flex;
   flex-direction: row;
   gap: 5px;
@@ -41,7 +41,7 @@
   background-color: rgb(255, 213, 128);
 }
 
-.child-container-accordion {
+.child-container-accordion3 {
   display: flex;
   flex-direction: column;
   gap: 10px;

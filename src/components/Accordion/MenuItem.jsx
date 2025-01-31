@@ -4,8 +4,8 @@ import "./accordion.css";
 export function MenuItem({ title, body }) {
   const [openState, setOpenState] = useState(false);
   return (
-    <div className="child-container-accordion">
-      <div className="label" onClick={() => setOpenState(!openState)}>
+    <div className="child-container-accordion3">
+      <div className="label3" onClick={() => setOpenState(!openState)}>
         <span>{title}</span>
         <span
           aria-hidden={true}
@@ -16,7 +16,7 @@ export function MenuItem({ title, body }) {
           }
         />
       </div>
-      {openState && <div className="content">{body}</div>}
+      {openState && <div className="content3">{body}</div>}
     </div>
   );
 }

@@ -7,7 +7,7 @@ const Day14 = () => {
 
   return (
     <>
-      <main className="main-container">
+      <main className="main-container4">
         {tooltips.map((item, i) => (
           <div className="card" key={i}>
             {i % 2 === 0 ? (

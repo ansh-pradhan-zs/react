@@ -13,7 +13,7 @@ const CounterAndTheme = () => {
 
   return (
     <div
-      className="action-div"
+      className="action-div1"
       style={{
         backgroundColor: `${theme}`,
       }}
@@ -24,7 +24,7 @@ const CounterAndTheme = () => {
       <span>Theme: {theme}</span>
       <div>
         <button
-          className="btn"
+          className="btn1"
           onClick={(e) => {
             e.stopPropagation();
             dispatch({ type: "reset" });
@@ -33,9 +33,9 @@ const CounterAndTheme = () => {
         >
           <RiResetRightLine size={26} color="white" />
         </button>
-        <div className="counter">
+        <div className="counter1">
           <button
-            className="btn"
+            className="btn1"
             onClick={(e) => {
               e.stopPropagation();
               dispatch({ type: "decrement" });
@@ -44,9 +44,9 @@ const CounterAndTheme = () => {
           >
             <FaMinus size={24} color="white" />
           </button>
-          <span className="count">Count: {state.count}</span>
+          <span className="count1">Count: {state.count}</span>
           <button
-            className="btn"
+            className="btn1"
             onClick={(e) => {
               e.stopPropagation();
               dispatch({ type: "increment" });

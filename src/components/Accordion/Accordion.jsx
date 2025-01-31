@@ -17,7 +17,7 @@ const menuItems = [
 ];
 export default function Accordion() {
   return (
-    <div className="container">
+    <div className="container3">
       {menuItems.map((item, ind) => (
         <MenuItem key={ind} title={item.title} body={item.body} />
       ))}
