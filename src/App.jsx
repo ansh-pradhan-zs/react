@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import Day6 from "./components/Day6/Day6";
 // import DiceRoll from "./components/DiceRoll";
@@ -23,10 +24,12 @@ function App() {
   //   };
   // }
 
+  const [index, setIndex] = useState(0);
+
   return (
     <>
       <main>
-        <Day6 />
+        {/* <Day6 /> */}
         {/* <Day8 /> */}
         {/* <Day9 />
         <DiceRoll />
