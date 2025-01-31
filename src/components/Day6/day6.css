@@ -1,0 +1,36 @@
+.empty-div {
+  height: 100vh;
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.action-div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 40px;
+}
+
+.count {
+  font-size: 30px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 10px 20px 10px 20px;
+  background: rgb(53, 53, 230);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}

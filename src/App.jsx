@@ -1,4 +1,5 @@
 import "./App.css";
+import Day6 from "./components/Day6/Day6";
 // import DiceRoll from "./components/DiceRoll";
 
 // import ParentDetailCard from "./components/ParentDetailCard/ParentDetailCard";
@@ -7,7 +8,7 @@ import "./App.css";
 // import Day13 from "./components/Day13/Day13";
 // import Day14 from "./components/Day14/Day14";
 // import Day14Throttling from "./components/Day14Throttling/Day14Throttling";
-import Day8 from "./components/Day8/Day8";
+// import Day8 from "./components/Day8/Day8";
 
 function App() {
   // function throttle(func, delay) { // ? using timeoutId
@@ -25,7 +26,8 @@ function App() {
   return (
     <>
       <main>
-        <Day8 />
+        <Day6 />
+        {/* <Day8 /> */}
         {/* <Day9 />
         <DiceRoll />
         <ParentDetailCard
