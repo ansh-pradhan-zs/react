@@ -1,0 +1,53 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* ParentComp Styles */
+
+.parent-container {
+  padding: 20px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid black;
+}
+
+.themeA {
+  background-color: #fada7a;
+}
+
+.themeB {
+  background-color: #f0a04b;
+}
+
+.parent-container button {
+  background-color: #b1c29e;
+  color: white;
+  padding: 5px 20px 5px 20px;
+  border-radius: 7px;
+}
+
+.component-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.child-component {
+  border-radius: 7px;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  box-shadow: 6px 6px 6px white;
+}

@@ -1,13 +1,10 @@
 import "./App.css";
-import ParentComp from "./components/ParentComp";
-import { ThemeContextProvider } from "./hooks/useThemeContext";
+import Day15 from "./components/Day15/Day15";
 
 function App() {
   return (
-    <main className="main-container">
-      <ThemeContextProvider>
-        <ParentComp />
-      </ThemeContextProvider>
+    <main>
+      <Day15 />
     </main>
   );
 }
