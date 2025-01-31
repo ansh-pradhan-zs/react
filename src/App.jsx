@@ -10,6 +10,7 @@ import Day6 from "./components/Day6/Day6";
 // import Day14 from "./components/Day14/Day14";
 // import Day14Throttling from "./components/Day14Throttling/Day14Throttling";
 // import Day8 from "./components/Day8/Day8";
+import Day15 from "./components/Day15/Day15";
 
 function App() {
   // function throttle(func, delay) { // ? using timeoutId
@@ -44,6 +45,7 @@ function App() {
         {/* <Day13 /> */}
         {/* <Day14 />
         <Day14Throttling /> */}
+        <Day15 />
       </main>
     </>
   );
